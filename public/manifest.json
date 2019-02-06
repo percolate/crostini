@@ -1,0 +1,47 @@
+{
+    "version": "1",
+    "name": "Crostini",
+    "description": "A demo for Percolate Developer Platform (PDP)",
+    "logo": "https://prclt-crostini.herokuapp.com/logo.svg",
+    "developer": "Percolate, Inc.",
+    "developer_email": "email@example.com",
+    "environment": "development",
+    "extensions": [
+        {
+            "location": "campaign_tab",
+            "label": "Crostini",
+            "url": "https://prclt-crostini.herokuapp.com/campaign"
+        },
+        {
+            "location": "post_tab",
+            "label": "Crostini",
+            "url": "https://prclt-crostini.herokuapp.com/content"
+        },
+        {
+            "location": "asset_tab",
+            "label": "Crostini",
+            "url": "https://prclt-crostini.herokuapp.com/asset"
+        },
+        {
+            "location": "request_tab",
+            "label": "Crostini",
+            "url": "https://prclt-crostini.herokuapp.com/request"
+        },
+        {
+            "location": "task_tab",
+            "label": "Crostini",
+            "url": "https://prclt-crostini.herokuapp.com/task"
+        },
+        {
+            "location": "top_nav",
+            "label": "Crostini",
+            "url": "https://prclt-crostini.herokuapp.com/top_nav",
+            "logo": "https://prclt-crostini.herokuapp.com/logo.svg"
+        },
+        {
+            "location": "settings",
+            "label": "Crostini",
+            "url": "https://prclt-crostini.herokuapp.com/settings"
+        }
+    ]
+}

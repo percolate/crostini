@@ -1,5 +1,6 @@
 import * as express from 'express'
 import { verify } from 'jsonwebtoken'
+import { format } from 'prettier'
 
 const app = express()
 const port = process.env.PORT || 3000
@@ -21,7 +22,7 @@ function echoJwt(req: express.Request, res: express.Response) {
             <h1>jwt</h1>
             <pre>${token}</pre>
             <h1>decoded</h1>
-            <pre>${decoded}</pre>
+            <pre>${format(JSON.stringify(decoded), { parser: 'json' })}</pre>
         `)
     } catch (e) {
         res.send(`

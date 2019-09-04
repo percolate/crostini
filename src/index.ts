@@ -35,7 +35,7 @@ function echoJwt(req: express.Request, res: express.Response) {
 }
 
 function lifecycle_callback(req: express.Request, res: express.Response) {
-    let response = `Request received, payload: ${JSON.stringify(req.body)}`
+    let response = `Request received, payload: ${format(JSON.stringify(req.body), { parser: 'json' })}`
     console.log(response)
     res.send(response) // implicit 200 status code as required by hotlanta
 }

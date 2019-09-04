@@ -34,7 +34,7 @@ function echoJwt(req: express.Request, res: express.Response) {
     }
 }
 
-function lifecycle_callback(req: express.Request, res: express.Response) {
+function lifecycleCallback(req: express.Request, res: express.Response) {
     let response = `Request received, payload: ${format(JSON.stringify(req.body), { parser: 'json' })}`
     console.log(response)
     res.send(response) // implicit 200 status code as required by hotlanta
@@ -50,10 +50,10 @@ app.get('/top_nav', echoJwt)
 app.get('/settings', echoJwt)
 
 // lifecycle callbacks
-app.post('/install', lifecycle_callback)
-app.post('/uninstall', lifecycle_callback)
-app.post('/enable', lifecycle_callback)
-app.post('/disable', lifecycle_callback)
-app.post('/update', lifecycle_callback)
+app.post('/install', lifecycleCallback)
+app.post('/uninstall', lifecycleCallback)
+app.post('/enable', lifecycleCallback)
+app.post('/disable', lifecycleCallback)
+app.post('/update', lifecycleCallback)
 
 app.listen(port, () => console.log(`Example app listening on port ${port}!`))

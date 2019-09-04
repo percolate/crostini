@@ -1,3 +1,4 @@
+import * as bodyParser from 'body-parser'
 import * as express from 'express'
 import { verify } from 'jsonwebtoken'
 import { format } from 'prettier'
@@ -7,6 +8,7 @@ const port = process.env.PORT || 3000
 const secret = process.env.APP_SECRET
 
 app.use(express.static('public'))
+app.use(bodyParser.json())
 
 function echoJwt(req: express.Request, res: express.Response) {
     const token: string = req.query.jwt
@@ -32,6 +34,13 @@ function echoJwt(req: express.Request, res: express.Response) {
     }
 }
 
+function lifecycle_callback(req: express.Request, res: express.Response) {
+    let response = `Request received, payload: ${JSON.stringify(req.body)}`
+    console.log(response)
+    res.send(response) // implicit 200 status code as required by hotlanta
+}
+
+// iframe redirects
 app.get('/campaign', echoJwt)
 app.get('/content', echoJwt)
 app.get('/asset', echoJwt)
@@ -39,5 +48,12 @@ app.get('/request', echoJwt)
 app.get('/task', echoJwt)
 app.get('/top_nav', echoJwt)
 app.get('/settings', echoJwt)
+
+// lifecycle callbacks
+app.post('/install', lifecycle_callback)
+app.post('/uninstall', lifecycle_callback)
+app.post('/enable', lifecycle_callback)
+app.post('/disable', lifecycle_callback)
+app.post('/update', lifecycle_callback)
 
 app.listen(port, () => console.log(`Example app listening on port ${port}!`))

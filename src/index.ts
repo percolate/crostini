@@ -40,6 +40,10 @@ function lifecycleCallback(req: express.Request, res: express.Response) {
     res.send(response) // implicit 200 status code as required by hotlanta
 }
 
+function hello(req: express.Request, res: express.Response) {
+    res.send("yes, your GET to '/' worked")
+}
+
 // iframe redirects
 app.get('/campaign', echoJwt)
 app.get('/content', echoJwt)
@@ -55,5 +59,7 @@ app.post('/uninstall', lifecycleCallback)
 app.post('/enable', lifecycleCallback)
 app.post('/disable', lifecycleCallback)
 app.post('/update', lifecycleCallback)
+
+app.get('/', hello)
 
 app.listen(port, () => console.log(`Example app listening on port ${port}!`))

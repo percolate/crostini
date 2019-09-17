@@ -11,7 +11,7 @@
         "uninstall": "https://prclt-crostini.herokuapp.com/uninstall",
         "enable": "https://prclt-crostini.herokuapp.com/enable",
         "disable": "https://prclt-crostini.herokuapp.com/disable",
-        "update": "https://prclt-crostini.herokuapp.com/update",
+        "update": "https://prclt-crostini.herokuapp.com/update"
     },
     "extensions": [
         {

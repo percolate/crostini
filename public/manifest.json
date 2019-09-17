@@ -5,13 +5,14 @@
     "logo": "https://prclt-crostini.herokuapp.com/logo.svg",
     "developer": "Percolate, Inc.",
     "developer_email": "email@example.com",
+    "support_website": "https://example.com",
     "environment": "development",
     "lifecycle": {
         "install": "https://prclt-crostini.herokuapp.com/install",
         "uninstall": "https://prclt-crostini.herokuapp.com/uninstall",
         "enable": "https://prclt-crostini.herokuapp.com/enable",
         "disable": "https://prclt-crostini.herokuapp.com/disable",
-        "update": "https://prclt-crostini.herokuapp.com/update",
+        "update": "https://prclt-crostini.herokuapp.com/update"
     },
     "extensions": [
         {

@@ -5,6 +5,7 @@
     "logo": "https://prclt-crostini.herokuapp.com/logo.svg",
     "developer": "Percolate, Inc.",
     "developer_email": "email@example.com",
+    "support_website": "https://example.com",
     "environment": "development",
     "lifecycle": {
         "install": "https://prclt-crostini.herokuapp.com/install",

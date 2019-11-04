@@ -19,11 +19,11 @@ following guide.
 ### Expose the app publicly with ngrok
 
 1. Install [ngrok](https://ngrok.com/)
-1. Expose the running local server publicly: `ngrok http 8000`
+1. Expose the running local server publicly: `ngrok http 3000`
 1. Change the URL domains in the manifest to use the URL displayed by the `ngrok`
    command
   - If you see the line
-    `Forwarding https://490d31a3.ngrok.io -> http://localhost:8000`, this means that
+    `Forwarding https://490d31a3.ngrok.io -> http://localhost:3000`, this means that
     the `prclt-crostini.herokuapp.com` domains should be changed to
     `490d31a3.ngrok.io`
 1. Upload the modified app manifest in the "App registration" page
@@ -36,11 +36,9 @@ following guide.
 1. Navigate to the app details by clicking on the app in the "App registration" page
 1. Click the "Show app secret" button to view the secret
 1. Start the app back up with the `APP_SECRET` environment variable set to the value
-   shown, and the `APP_AUDIENCE` variable set to the `ngrok` domain provided in the
-   previous section, an example of this command:
+   shown, an example of this command:
 ```
 APP_SECRET=c12de0430670c1e251e0502aa3afb385374df5337bdd20b27b0e77fc702c9b1a \
-APP_SECRET=5406e8ce.ngrok.io \
 npm start
 ```
 1. Navigate to a page with a UI component served by the app and verify that the JWT

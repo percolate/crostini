@@ -1,18 +1,25 @@
 {
-    "version": "1",
     "name": "Crostini",
+    "version": "1.1.0",
     "description": "A demo for Percolate Developer Platform (PDP)",
-    "logo": "https://prclt-crostini.herokuapp.com/logo.svg",
+    "environment": "production",
     "developer": "Percolate, Inc.",
     "developer_email": "email@example.com",
     "support_website": "https://example.com",
-    "environment": "development",
+    "logo": "https://prclt-crostini.herokuapp.com/logo.svg",
+    "capabilities": [
+        "brief:read",
+        "brief:create",
+        "brief:edit",
+        "brief:delete"
+    ],
     "lifecycle": {
         "install": "https://prclt-crostini.herokuapp.com/install",
         "uninstall": "https://prclt-crostini.herokuapp.com/uninstall",
         "enable": "https://prclt-crostini.herokuapp.com/enable",
         "disable": "https://prclt-crostini.herokuapp.com/disable",
-        "update": "https://prclt-crostini.herokuapp.com/update"
+        "update": "https://prclt-crostini.herokuapp.com/update",
+        "upgrade": "https://prclt-crostini.herokuapp.com/upgrade"
     },
     "extensions": [
         {

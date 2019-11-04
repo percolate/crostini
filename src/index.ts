@@ -59,6 +59,7 @@ app.post('/uninstall', lifecycleCallback)
 app.post('/enable', lifecycleCallback)
 app.post('/disable', lifecycleCallback)
 app.post('/update', lifecycleCallback)
+app.post('/upgrade', lifecycleCallback)
 
 app.get('/', hello)
 

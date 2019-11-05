@@ -41,7 +41,7 @@ function lifecycleCallback(req: express.Request, res: express.Response) {
 }
 
 function hello(req: express.Request, res: express.Response) {
-    res.send("hi")
+    res.send('hi')
 }
 
 // iframe redirects

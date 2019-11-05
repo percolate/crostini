@@ -35,16 +35,17 @@ function echoJwt(req: express.Request, res: express.Response) {
 }
 
 function lifecycleCallback(req: express.Request, res: express.Response) {
-    let response = `Request received, payload: ${format(JSON.stringify(req.body), { parser: 'json' })}`
+    let response = `"${req.path}" lifecycle callback endpoint called with data:
+${format(JSON.stringify(req.body), { parser: 'json' })}`
     console.log(response)
-    res.send(response) // implicit 200 status code as required by hotlanta
+    res.send(response)
 }
 
 function hello(req: express.Request, res: express.Response) {
     res.send('hi')
 }
 
-// iframe redirects
+// UI extension endpoints
 app.get('/campaign', echoJwt)
 app.get('/content', echoJwt)
 app.get('/asset', echoJwt)

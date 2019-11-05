@@ -15,6 +15,8 @@ following guide.
 
 1. Install dependencies: `npm install`
 1. Run the app: `npm start`
+1. Verify it's working by navigating to [http://localhost:3000](http://localhost:3000),
+   you should see the string `hi`
 
 ### Expose the app publicly with ngrok
 

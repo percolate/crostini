@@ -6,6 +6,10 @@ Defines a manifest and [a Heroku app](https://prclt-crostini.herokuapp.com/). Th
 manifest defines both lifecycle callback and UI extension URLs, which are served by
 the Heroku app.
 
+For a similar app written in Python, see
+[Biscotti.](https://github.com/percolate/biscotti)
+
+
 ## Running the app locally
 
 To create an application server running on your own machine instead of Heroku, use the

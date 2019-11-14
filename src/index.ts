@@ -36,14 +36,14 @@ function echoJwt(req: express.Request, res: express.Response) {
 
 function lifecycleCallback(req: express.Request, res: express.Response) {
     // Express lowercases header names, the original casing is "X-Perc-App-Secret"
-    const header_secret = req.headers["x-perc-app-secret"]
+    const header_secret = req.headers['x-perc-app-secret']
     if (!secret) {
-        console.log("Cannot validate request, no APP_SECRET environment variable defined")
+        console.log('Cannot validate request, no APP_SECRET environment variable defined')
     } else if (header_secret !== secret) {
         console.log(
-            "WARNING! This request may not have come from Percolate, the "+
-            "X-Perc-App-Secret header value does not match the APP_SECRET environment "+
-            "variable!"
+            'WARNING! This request may not have come from Percolate, the ' +
+                'X-Perc-App-Secret header value does not match the APP_SECRET environment ' +
+                'variable!'
         )
     }
 

@@ -21,6 +21,7 @@
     "test": "npm run prettier:check && npm run tsc",
     "prettier:check": "prettier --list-different src/**/*",
     "prettier:write": "prettier --write src/**/*",
-    "tsc": "tsc --noEmit"
+    "tsc": "tsc --noEmit",
+    "check-json": "node scripts/check_manifest_json.js"
   }
 }

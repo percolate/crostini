@@ -10,7 +10,7 @@
     "capabilities": [
         "brief:read",
         "brief:create",
-        "brief:edit"
+        "brief:edit",
         "brief:delete"
     ],
     "lifecycle": {

@@ -22,4 +22,4 @@ jobs:
             - node_modules
             - /tmp/.yarn_cache
       - run: npm test
-      - run: npm check-json
+      - run: npm run check-json

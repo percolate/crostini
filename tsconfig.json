@@ -1,17 +1,17 @@
 {
-    "compilerOptions": {
-        "baseUrl": ".",
-        "importHelpers": true,
-        "module": "commonjs",
-        "moduleResolution": "node",
-        "noImplicitAny": true,
-        "noUnusedLocals": true,
-        "outDir": "dist/",
-        "pretty": true,
-        "skipLibCheck": true,
-        "sourceMap": true,
-        "strictNullChecks": true,
-        "target": "es6"
-    },
-    "include": ["./src","./__tests__"]
+  "compilerOptions": {
+    "baseUrl": ".",
+    "importHelpers": true,
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "noImplicitAny": true,
+    "noUnusedLocals": true,
+    "outDir": "dist/",
+    "pretty": true,
+    "skipLibCheck": true,
+    "sourceMap": true,
+    "strictNullChecks": true,
+    "target": "es6"
+  },
+  "include": ["./src", "./__tests__"]
 }

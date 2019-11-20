@@ -43,7 +43,6 @@ describe('endpoints', () => {
                 .expect(200)
                 .end((err, res) => {
                     if (err) throw err
-                    console.log(res.text)
                     assert(res.text.indexOf('No APP_SECRET defined') !== -1)
                 })
         })

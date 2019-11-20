@@ -7,7 +7,6 @@ import * as sinon from 'sinon'
 import * as index from '../src/index'
 
 const testSecret = 'a'.repeat(64)
-process.env.APP_SECRET = testSecret
 
 describe('endpoints', () => {
     beforeEach('', () => {

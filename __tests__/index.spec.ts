@@ -38,8 +38,7 @@ describe('endpoints', () => {
         })
         it('should report unset APP_SECRET', () => {
             this.sandbox.stub(process, 'env').value({ APP_SECRET: undefined })
-            const app = index.makeApp()
-            request(app)
+            request(this.app)
                 .get('/campaign')
                 .expect(200)
                 .end((err, res) => {
